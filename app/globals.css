@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* <CHANGE> Paleta de colores Canapa - tonos naturales verdes, marfil y miel */
+:root {
+  --background: #ffffff;
+  --foreground: #2d3728;
+  --card: #f6f5ef;
+  --card-foreground: #2d3728;
+  --popover: #ffffff;
+  --popover-foreground: #2d3728;
+  --primary: #4b8c5a;
+  --primary-foreground: #ffffff;
+  --secondary: #709f70;
+  --secondary-foreground: #ffffff;
+  --muted: #f6f5ef;
+  --muted-foreground: #bfc5b2;
+  --accent: #d1a953;
+  --accent-foreground: #2d3728;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #e8e6de;
+  --input: #e8e6de;
+  --ring: #4b8c5a;
+  --chart-1: #4b8c5a;
+  --chart-2: #709f70;
+  --chart-3: #d1a953;
+  --chart-4: #bfc5b2;
+  --chart-5: #f6f5ef;
+  --radius: 0.625rem;
+  --sidebar: #f6f5ef;
+  --sidebar-foreground: #2d3728;
+  --sidebar-primary: #4b8c5a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #709f70;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e8e6de;
+  --sidebar-ring: #4b8c5a;
+}
+
+.dark {
+  --background: #1a1f17;
+  --foreground: #f6f5ef;
+  --card: #2d3728;
+  --card-foreground: #f6f5ef;
+  --popover: #1a1f17;
+  --popover-foreground: #f6f5ef;
+  --primary: #4b8c5a;
+  --primary-foreground: #ffffff;
+  --secondary: #709f70;
+  --secondary-foreground: #ffffff;
+  --muted: #2d3728;
+  --muted-foreground: #bfc5b2;
+  --accent: #d1a953;
+  --accent-foreground: #1a1f17;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #3d4538;
+  --input: #3d4538;
+  --ring: #4b8c5a;
+  --chart-1: #4b8c5a;
+  --chart-2: #709f70;
+  --chart-3: #d1a953;
+  --chart-4: #bfc5b2;
+  --chart-5: #2d3728;
+  --sidebar: #2d3728;
+  --sidebar-foreground: #f6f5ef;
+  --sidebar-primary: #4b8c5a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #709f70;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #3d4538;
+  --sidebar-ring: #4b8c5a;
+}
+
+@theme inline {
+  --font-sans: "Open Sans", "Open Sans Fallback", sans-serif;
+  --font-heading: "Montserrat", "Montserrat Fallback", sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
