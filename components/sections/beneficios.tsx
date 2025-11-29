@@ -4,43 +4,37 @@ const benefits = [
   {
     icon: Dumbbell,
     title: "Proteína completa y digestiva",
-    description:
-      "Contiene todos los aminoácidos esenciales y se digiere fácilmente. Ideal para deportistas, veganos o cualquier persona que busque añadir proteína vegetal de calidad.",
+    description: "Todos los aminoácidos esenciales en forma vegetal. Ideal para deportistas y veganos.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Salad,
-    title: "Salud digestiva (fibra)",
-    description:
-      "La fibra de cáñamo y chía mejora la regularidad intestinal y alimenta la microbiota, ayudando a mantener un intestino sano.",
+    title: "Salud digestiva",
+    description: "La fibra mejora la regularidad intestinal y alimenta la microbiota.",
     color: "bg-secondary/20 text-secondary",
   },
   {
     icon: Brain,
     title: "Grasas amigas del cerebro",
-    description:
-      "Los ácidos grasos Omega 3 y 6 contribuyen a la función cognitiva, la memoria y el equilibrio emocional.",
+    description: "Omega 3 y 6 que apoyan la función cognitiva y el equilibrio emocional.",
     color: "bg-accent/20 text-accent",
   },
   {
     icon: Activity,
     title: "Regulación de la glucosa",
-    description:
-      "La combinación de proteínas y fibra ayuda a liberar la energía de los alimentos de forma gradual, favoreciendo la estabilidad de la glucosa en sangre.",
+    description: "Proteínas y fibra que liberan energía de forma gradual y estable.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Scale,
     title: "Saciedad y control de peso",
-    description:
-      "El cáñamo y la chía promueven una sensación de llenura duradera, ayudando a controlar la ingesta calórica.",
+    description: "Sensación de llenura duradera que ayuda a controlar la ingesta calórica.",
     color: "bg-secondary/20 text-secondary",
   },
   {
     icon: Heart,
     title: "Corazón saludable",
-    description:
-      "El perfil de grasas insaturadas y la fibra contribuyen a mantener niveles saludables de colesterol y a reducir la inflamación.",
+    description: "Grasas insaturadas y fibra que mantienen el colesterol en niveles saludables.",
     color: "bg-accent/20 text-accent",
   },
 ]
@@ -54,7 +48,7 @@ export function Beneficios() {
             Beneficios para tu cuerpo
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Descubrí cómo el cáñamo y la chía pueden transformar tu alimentación diaria
+            Cáñamo y chía: nutrición que transforma tu día a día
           </p>
         </div>
 

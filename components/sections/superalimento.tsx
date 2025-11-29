@@ -4,20 +4,19 @@ import { Sparkles, Check } from "lucide-react"
 const benefits = [
   {
     title: "Proteínas completas",
-    description:
-      "Contienen los nueve aminoácidos esenciales, ideales para quien busca alternativas vegetales de calidad.",
+    description: "Los nueve aminoácidos esenciales en fuente vegetal.",
   },
   {
     title: "Fibra dietética",
-    description: "Favorece la salud digestiva y da mayor saciedad.",
+    description: "Mejora la digestión y prolonga la saciedad.",
   },
   {
     title: "Omega 3 y 6",
-    description: "En proporción 1:3, fundamental para el sistema nervioso y cardiovascular.",
+    description: "Proporción 1:3 ideal para cerebro y corazón.",
   },
   {
     title: "Vitaminas y minerales",
-    description: "Hierro, magnesio, zinc, calcio y vitaminas del grupo B.",
+    description: "Hierro, magnesio, zinc, calcio y vitaminas B.",
   },
 ]
 
@@ -35,13 +34,12 @@ export function Superalimento() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Image */}
           <div className="flex justify-center lg:order-2">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-2xl" />
               <Image
-                src="https://i.postimg.cc/Xvg7xRkz/Whats-App-Image-2025-11-27-at-14-24-51-(1).jpg"
-                alt="Gráfico circular con composición nutricional del cáñamo y la chía"
+                src="https://i.postimg.cc/bwxdNhqW/Whats-App-Image-2025-11-27-at-14-28-06.jpg"
+                alt="Bol con harina de cáñamo y semillas"
                 width={400}
                 height={400}
                 className="relative rounded-2xl shadow-xl"
@@ -49,11 +47,10 @@ export function Superalimento() {
             </div>
           </div>
 
-          {/* Content */}
+          {/* Content - Intro simplificada a una frase */}
           <div className="lg:order-1">
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-              Nuestros productos combinan harina de cáñamo con semillas de chía para potenciar sus beneficios. Esta
-              mezcla aporta:
+              Combinamos harina de cáñamo con semillas de chía para potenciar estos beneficios:
             </p>
 
             <div className="space-y-4">
@@ -74,8 +71,7 @@ export function Superalimento() {
             </div>
 
             <p className="mt-8 text-lg text-foreground/80 font-medium">
-              Gracias a esta combinación, nuestras pizzas y pastas se convierten en un auténtico{" "}
-              <strong className="text-primary">suplemento dietario natural</strong>.
+              Pizzas y pastas que funcionan como <strong className="text-primary">suplemento dietario natural</strong>.
             </p>
           </div>
         </div>

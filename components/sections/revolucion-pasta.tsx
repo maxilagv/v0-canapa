@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Check, ArrowRight } from "lucide-react"
 
 const features = [
@@ -24,9 +25,21 @@ export function RevolucionPasta() {
               Revolución en tu plato de pasta
             </h2>
             <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-              Imaginá una pasta que no solo sea deliciosa, sino que además te aporte más nutrientes que la pasta
-              tradicional.
+              Pasta deliciosa con más nutrientes que la tradicional.
             </p>
+          </div>
+
+          <div className="flex justify-center mb-12">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl blur-xl" />
+              <Image
+                src="https://i.postimg.cc/C13sp0hd/Whats-App-Image-2025-11-27-at-14-41-53.jpg"
+                alt="Fideos con harina de cáñamo Canapa"
+                width={500}
+                height={300}
+                className="relative rounded-2xl shadow-xl"
+              />
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -48,8 +61,7 @@ export function RevolucionPasta() {
 
               <div className="mt-8 p-4 bg-primary/5 rounded-xl border border-primary/20">
                 <p className="text-foreground/80 text-sm">
-                  <strong className="text-primary">Para quienes no pueden consumir gluten</strong>, es una alternativa
-                  segura cuando la receta final no incorpora trigo.
+                  <strong className="text-primary">Sin gluten</strong> cuando la receta final no incorpora trigo.
                 </p>
               </div>
             </div>
@@ -85,7 +97,7 @@ export function RevolucionPasta() {
               </div>
 
               <div className="mt-8 flex items-center gap-2 text-primary font-medium">
-                <span>Transformá un alimento cotidiano en una opción funcional</span>
+                <span>De cotidiano a funcional</span>
                 <ArrowRight className="w-4 h-4" />
               </div>
             </div>

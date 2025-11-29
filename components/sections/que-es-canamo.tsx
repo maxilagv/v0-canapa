@@ -16,19 +16,16 @@ export function QueEsCanamo() {
 
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
-              El cáñamo es una subespecie de <em>Cannabis sativa</em> cultivada desde hace siglos para fabricar
-              textiles, aceites y alimentos. A diferencia de la marihuana, contiene niveles casi nulos de THC, por lo
-              que <strong>no produce efectos psicoactivos</strong> y su consumo es totalmente seguro dentro de una dieta
-              equilibrada.
+              El cáñamo es una variedad de <em>Cannabis sativa</em> con niveles casi nulos de THC:
+              <strong> no produce efectos psicoactivos</strong> y es totalmente seguro para consumo alimentario.
             </p>
-
             <p>
-              En Canapa usamos cáñamo industrial de producción controlada, respetando las normas vigentes. De sus
-              semillas obtenemos la <strong>harina de cáñamo</strong>, base de nuestros productos.
+              De sus semillas obtenemos la <strong>harina de cáñamo</strong>, base nutritiva de todos nuestros
+              productos.
             </p>
           </div>
 
-          {/* Historical Note */}
+          {/* Historical Note - Texto resumido */}
           <div className="mt-12 p-6 md:p-8 bg-muted rounded-2xl">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-1">
@@ -39,9 +36,7 @@ export function QueEsCanamo() {
                   Apunte histórico
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Desde el Antiguo Egipto hasta hoy, el cáñamo ha acompañado a distintas culturas. Con la
-                  industrialización se relegó su uso alimentario, pero hoy redescubrimos sus propiedades nutricionales y
-                  su capacidad para enriquecer preparaciones clásicas.
+                  Usado hace siglos para textiles y alimentos, hoy volvemos a descubrir sus beneficios nutricionales.
                 </p>
               </div>
             </div>

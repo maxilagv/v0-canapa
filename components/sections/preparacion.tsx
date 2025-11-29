@@ -5,17 +5,17 @@ const tips = [
   {
     icon: Flame,
     title: "Hervir",
-    description: "En abundante agua con sal",
+    description: "Agua abundante con sal",
   },
   {
     icon: Clock,
-    title: "10-12 minutos",
+    title: "10-12 min",
     description: "Tiempo de cocción",
   },
   {
     icon: Utensils,
     title: "Servir",
-    description: "Colar y combinar con tu salsa favorita",
+    description: "Colar y añadir salsa",
   },
 ]
 
@@ -65,14 +65,11 @@ export function Preparacion() {
 
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
-                  Nuestros fideos se cocinan como cualquier pasta: hervir en abundante agua durante{" "}
-                  <strong className="text-foreground">10–12 minutos</strong>, colar y servir. Mantienen una textura
-                  agradable y un sabor suave que se adapta a cualquier salsa.
+                  Hervir <strong className="text-foreground">10–12 minutos</strong>, colar y servir. Textura agradable y
+                  sabor suave para cualquier salsa.
                 </p>
                 <p>
-                  Recomendamos combinarlos con{" "}
-                  <strong className="text-foreground">verduras frescas, aceites de calidad y hierbas aromáticas</strong>{" "}
-                  para potenciar su perfil nutricional.
+                  Ideal con <strong className="text-foreground">verduras frescas, aceites de calidad y hierbas</strong>.
                 </p>
               </div>
 

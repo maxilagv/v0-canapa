@@ -1,14 +1,23 @@
-# Canapa landing page
+# Canapa - Landing Page
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/maximos-projects-c38e84e9/v0-canapa)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/jwTvDc10Ont)
 
-## Overview
+## Sobre Canapa
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+**Canapa** es el primer emprendimiento en Argentina en elaborar alimentos con harina de cáñamo. Ofrecemos pizzas y pastas enriquecidas con cáñamo y chía: nutrición real en platos de siempre.
+
+### Marco Legal
+
+En 2022 Argentina aprobó la **Ley 27.669** que establece el marco legal para la industria del cannabis medicinal y del cáñamo industrial, promoviendo la investigación, producción y acceso a financiamiento para emprendimientos innovadores.
+
+### Oportunidad para Distribuidores
+
+- **Mercado emergente** de alimentos saludables y funcionales
+- **Producto diferencial** con alto contenido proteico y fibra
+- **Impacto positivo** con potencial de exportación
 
 ## Deployment
 

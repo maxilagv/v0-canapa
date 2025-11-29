@@ -38,21 +38,6 @@ export function SomosCanapa() {
             Somos Canapa
           </h2>
 
-          <div className="bg-background/80 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-lg mb-12">
-            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              Canapa nace con un propósito claro:{" "}
-              <strong className="text-primary">llevar el cáñamo del campo a la mesa de todos los días</strong>. Fuimos
-              el primer restaurante en Argentina en incorporar harina de cáñamo a su carta, comenzando con nuestras
-              pizzas y fideos enriquecidos.
-            </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              A partir de la respuesta de los clientes, desarrollamos productos para que cualquiera pueda disfrutar los
-              beneficios de este superalimento en casa. Nuestra misión es difundir el uso del cáñamo y la chía en la
-              industria alimentaria como lo que son:
-              <strong className="text-primary"> ingredientes nutritivos y sostenibles</strong>.
-            </p>
-          </div>
-
           {/* Values */}
           <div className="grid sm:grid-cols-3 gap-6">
             {values.map((value, index) => (
@@ -64,6 +49,17 @@ export function SomosCanapa() {
                 <p className="text-foreground/70 text-sm">{value.description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="bg-background/80 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-lg mb-12">
+            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+              Fuimos el <strong className="text-primary">primer restaurante en Argentina</strong> en incorporar harina
+              de cáñamo a su carta, comenzando con pizzas y fideos enriquecidos.
+            </p>
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              Nuestra misión es llevar sus beneficios a más personas y
+              <strong className="text-primary"> fomentar una industria sustentable</strong>.
+            </p>
           </div>
         </div>
       </div>

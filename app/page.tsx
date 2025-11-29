@@ -1,4 +1,6 @@
 import { Hero } from "@/components/sections/hero"
+import { LeyFinanciamiento } from "@/components/sections/ley-financiamiento"
+import { Distribuidores } from "@/components/sections/distribuidores"
 import { QueEsCanamo } from "@/components/sections/que-es-canamo"
 import { Superalimento } from "@/components/sections/superalimento"
 import { Beneficios } from "@/components/sections/beneficios"
@@ -16,6 +18,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <LeyFinanciamiento />
+      <Distribuidores />
       <QueEsCanamo />
       <Superalimento />
       <Beneficios />
