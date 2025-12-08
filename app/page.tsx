@@ -7,7 +7,6 @@ import { Beneficios } from "@/components/sections/beneficios"
 import { RevolucionPasta } from "@/components/sections/revolucion-pasta"
 import { Proceso } from "@/components/sections/proceso"
 import { SomosCanapa } from "@/components/sections/somos-canapa"
-import { Preparacion } from "@/components/sections/preparacion"
 import { FAQ } from "@/components/sections/faq"
 import { Contacto } from "@/components/sections/contacto"
 import { Navbar } from "@/components/navbar"
@@ -18,7 +17,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <LeyFinanciamiento />
       <Distribuidores />
       <QueEsCanamo />
       <Superalimento />
@@ -26,9 +24,9 @@ export default function Home() {
       <RevolucionPasta />
       <Proceso />
       <SomosCanapa />
-      <Preparacion />
       <FAQ />
       <Contacto />
+      <LeyFinanciamiento />
       <Footer />
     </main>
   )
