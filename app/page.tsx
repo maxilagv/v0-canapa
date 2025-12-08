@@ -4,7 +4,7 @@ import { Distribuidores } from "@/components/sections/distribuidores"
 import { QueEsCanamo } from "@/components/sections/que-es-canamo"
 import { Superalimento } from "@/components/sections/superalimento"
 import { Beneficios } from "@/components/sections/beneficios"
-import { RevolucionPasta } from "@/components/sections/revolucion-pasta"
+import { ProductosDestacados } from "@/components/sections/productos-destacados"
 import { Proceso } from "@/components/sections/proceso"
 import { SomosCanapa } from "@/components/sections/somos-canapa"
 import { FAQ } from "@/components/sections/faq"
@@ -18,10 +18,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Distribuidores />
+      <ProductosDestacados />
       <QueEsCanamo />
       <Superalimento />
       <Beneficios />
-      <RevolucionPasta />
       <Proceso />
       <SomosCanapa />
       <FAQ />

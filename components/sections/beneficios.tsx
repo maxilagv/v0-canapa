@@ -6,45 +6,39 @@ import { motion } from "framer-motion"
 const benefits = [
   {
     icon: Dumbbell,
-    title: "Proteína completa y digestiva",
-    description: "Todos los aminoácidos esenciales en forma vegetal. Ideal para deportistas y veganos.",
-    colorClass: "from-primary/20 to-primary/5 border-primary/30 hover:border-primary",
-    iconBg: "bg-primary/20 text-primary",
+    title: "Proteína Completa",
+    description: "Ideal para deportistas y veganos, contiene todos los aminoácidos esenciales.",
+    color: "primary",
   },
   {
     icon: Salad,
-    title: "Salud digestiva",
-    description: "La fibra mejora la regularidad intestinal y alimenta la microbiota.",
-    colorClass: "from-secondary/20 to-secondary/5 border-secondary/30 hover:border-secondary",
-    iconBg: "bg-secondary/20 text-secondary",
+    title: "Salud Digestiva",
+    description: "Su alto contenido de fibra mejora la regularidad intestinal y alimenta tu microbiota.",
+    color: "secondary",
   },
   {
     icon: Brain,
-    title: "Grasas amigas del cerebro",
-    description: "Omega 3 y 6 que apoyan la función cognitiva y el equilibrio emocional.",
-    colorClass: "from-accent/20 to-accent/5 border-accent/30 hover:border-accent",
-    iconBg: "bg-accent/20 text-accent",
+    title: "Función Cognitiva",
+    description: "Los ácidos grasos Omega 3 y 6 apoyan la concentración y el equilibrio emocional.",
+    color: "accent",
   },
   {
     icon: Activity,
-    title: "Regulación de la glucosa",
-    description: "Proteínas y fibra que liberan energía de forma gradual y estable.",
-    colorClass: "from-primary/20 to-primary/5 border-primary/30 hover:border-primary",
-    iconBg: "bg-primary/20 text-primary",
+    title: "Energía Sostenida",
+    description: "Proteínas y fibra que liberan energía de forma gradual, evitando picos de glucosa.",
+    color: "primary",
   },
   {
     icon: Scale,
-    title: "Saciedad y control de peso",
-    description: "Sensación de llenura duradera que ayuda a controlar la ingesta calórica.",
-    colorClass: "from-secondary/20 to-secondary/5 border-secondary/30 hover:border-secondary",
-    iconBg: "bg-secondary/20 text-secondary",
+    title: "Control de Peso",
+    description: "Genera una sensación de saciedad duradera que ayuda a controlar la ingesta calórica.",
+    color: "secondary",
   },
   {
     icon: Heart,
-    title: "Corazón saludable",
-    description: "Grasas insaturadas y fibra que mantienen el colesterol en niveles saludables.",
-    colorClass: "from-accent/20 to-accent/5 border-accent/30 hover:border-accent",
-    iconBg: "bg-accent/20 text-accent",
+    title: "Corazón Saludable",
+    description: "Las grasas insaturadas y la fibra ayudan a mantener el colesterol en niveles óptimos.",
+    color: "accent",
   },
 ]
 
@@ -59,64 +53,60 @@ const containerVariants = {
 }
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
-      ease: "easeOut",
     },
   },
 }
 
 export function Beneficios() {
   return (
-    <section id="beneficios" className="py-20 md:py-28 bg-background">
+    <section id="beneficios" className="py-20 md:py-28 bg-gradient-to-b from-secondary/5 to-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
+          viewport={{ once: true, amount: 0.5 }}
+          className="text-center mb-16"
         >
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Beneficios para tu cuerpo
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Beneficios para tu Cuerpo y Mente
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">Cáñamo: nutrición que transforma tu día a día</p>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            El cáñamo es una fuente de nutrición que impulsa tu bienestar desde adentro hacia afuera.
+          </p>
         </motion.div>
 
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
         >
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{
-                scale: 1.03,
-                y: -8,
-                transition: { duration: 0.3 },
-              }}
-              className={`
-                group p-6 rounded-2xl border-2 transition-all duration-300 cursor-default
-                bg-gradient-to-br ${benefit.colorClass}
-                hover:shadow-xl
-              `}
+              whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
+              className="bg-card p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50"
             >
-              <motion.div
-                whileHover={{ rotate: [0, -10, 10, 0] }}
-                transition={{ duration: 0.5 }}
-                className={`w-14 h-14 rounded-xl ${benefit.iconBg} flex items-center justify-center mb-4`}
-              >
-                <benefit.icon className="w-7 h-7" />
-              </motion.div>
-              <h3 className="font-[var(--font-heading)] font-semibold text-xl mb-3 text-foreground">{benefit.title}</h3>
-              <p className="text-foreground/70 leading-relaxed">{benefit.description}</p>
+              <div className="flex items-center gap-4">
+                <div className={`w-14 h-14 rounded-xl bg-${benefit.color}/20 flex items-center justify-center flex-shrink-0`}>
+                  <benefit.icon className={`w-7 h-7 text-${benefit.color}`} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-xl text-foreground">
+                    {benefit.title}
+                  </h3>
+                </div>
+              </div>
+              <p className="text-foreground/70 mt-4">{benefit.description}</p>
             </motion.div>
           ))}
         </motion.div>

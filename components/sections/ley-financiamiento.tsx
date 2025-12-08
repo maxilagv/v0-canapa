@@ -1,31 +1,44 @@
-import { Scale, CheckCircle } from "lucide-react"
+"use client"
+
+import { Scale, CheckCircle, Award } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function LeyFinanciamiento() {
   return (
-    <section className="py-16 md:py-20 bg-background">
+    <section className="py-20 md:py-28 bg-secondary/5">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-8 p-8 md:p-10 bg-muted rounded-2xl border border-border/50">
-            <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-              <Scale className="w-10 h-10 text-primary" />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          className="max-w-4xl mx-auto bg-card p-8 md:p-12 rounded-2xl shadow-lg border border-border/50"
+        >
+          <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-8">
+            <div className="flex-shrink-0">
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center"
+              >
+                <Award className="w-12 h-12 text-primary" />
+              </motion.div>
             </div>
 
-            <div className="text-center md:text-left">
-              <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Ley de financiamiento del cáñamo
+            <div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Un Marco Legal para Crecer
               </h2>
-              <p className="text-foreground/80 leading-relaxed mb-4">
-                En 2022 Argentina aprobó el marco legal para la industria del cannabis medicinal y del cáñamo industrial
-                (Ley 27.669), que promueve la investigación, la producción y el acceso a financiamiento para
-                emprendimientos innovadores.
+              <div className="w-24 h-1 bg-primary mx-auto md:mx-0 mb-6"></div>
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                En 2022, Argentina aprobó la Ley 27.669, creando el marco regulatorio para la industria del cannabis medicinal y el cáñamo industrial. Esta ley fomenta la investigación, la producción y el acceso a financiamiento para emprendimientos innovadores como Canapa.
               </p>
-              <div className="flex items-center gap-2 text-primary font-medium">
+              <div className="inline-flex items-center gap-3 bg-primary/10 text-primary font-semibold px-4 py-2 rounded-full">
                 <CheckCircle className="w-5 h-5" />
-                <span>Marco legal que facilita la inversión y el desarrollo de productos</span>
+                <span>Un sector con respaldo legal y potencial de exportación.</span>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

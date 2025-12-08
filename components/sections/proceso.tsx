@@ -1,90 +1,93 @@
+"use client"
+
 import { Sprout, Leaf, Wheat, ChefHat } from "lucide-react"
+import { motion } from "framer-motion"
 
 const steps = [
   {
     icon: Sprout,
-    title: "Cultivo de cáñamo industrial",
-    description: "Cultivo responsable y legal, siguiendo las normativas vigentes.",
-    color: "bg-primary text-primary-foreground",
+    title: "Cultivo Responsable",
+    description: "Cáñamo industrial cultivado de forma legal y sostenible.",
+    color: "primary",
   },
   {
     icon: Leaf,
-    title: "Cosecha y selección de semillas",
-    description: "Control de calidad riguroso para garantizar su valor nutricional.",
-    color: "bg-secondary text-secondary-foreground",
+    title: "Cosecha y Selección",
+    description: "Selección manual de las mejores semillas para garantizar su valor nutricional.",
+    color: "secondary",
   },
   {
     icon: Wheat,
-    title: "Molienda y mezcla",
-    description: "Molido fino de las semillas de cáñamo y chía para convertirlas en harina nutritiva.",
-    color: "bg-accent text-accent-foreground",
+    title: "Molienda Artesanal",
+    description: "Molido en frío de las semillas para convertirlas en una harina nutritiva.",
+    color: "accent",
   },
   {
     icon: ChefHat,
-    title: "Elaboración de alimentos",
-    description: "Uso de la harina para crear pizzas, pastas y otros productos deliciosos.",
-    color: "bg-primary text-primary-foreground",
+    title: "Elaboración Culinaria",
+    description: "Uso de la harina para crear pizzas y pastas deliciosas y funcionales.",
+    color: "primary",
   },
 ]
 
 export function Proceso() {
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section id="proceso" className="py-20 md:py-28 bg-gradient-to-b from-background to-secondary/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Del campo al plato
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Del Campo a tu Plato
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">Conocé el proceso detrás de nuestros productos</p>
-        </div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            Un viaje de transparencia y calidad que podés saborear en cada bocado.
+          </p>
+        </motion.div>
 
-        <div className="max-w-5xl mx-auto">
-          {/* Desktop Timeline */}
-          <div className="hidden md:block relative">
-            {/* Connection Line */}
-            <div className="absolute top-10 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full" />
+        <div className="relative max-w-5xl mx-auto">
+          {/* Timeline Connector */}
+          <div className="hidden md:block absolute top-12 left-0 w-full h-1 bg-border" aria-hidden="true" />
 
-            <div className="grid grid-cols-4 gap-6">
-              {steps.map((step, index) => (
-                <div key={index} className="relative flex flex-col items-center text-center">
-                  {/* Icon */}
-                  <div
-                    className={`relative z-10 w-20 h-20 rounded-full ${step.color} flex items-center justify-center shadow-lg mb-6`}
-                  >
-                    <step.icon className="w-9 h-9" />
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="font-[var(--font-heading)] font-semibold text-lg mb-2 text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">{step.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile Timeline */}
-          <div className="md:hidden space-y-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{
+              visible: { transition: { staggerChildren: 0.2 } }
+            }}
+            className="grid md:grid-cols-4 gap-8"
+          >
             {steps.map((step, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex flex-col items-center">
-                  <div className={`w-14 h-14 rounded-full ${step.color} flex items-center justify-center shadow-lg`}>
-                    <step.icon className="w-7 h-7" />
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 40 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                className="relative text-center"
+              >
+                <motion.div
+                  whileHover={{ y: -10, scale: 1.05 }}
+                  className="flex justify-center"
+                >
+                  <div className="relative z-10 w-24 h-24 rounded-full bg-card border-4 border-border flex items-center justify-center shadow-lg mb-6">
+                    <div className={`w-16 h-16 bg-${step.color}/10 rounded-full flex items-center justify-center`}>
+                      <step.icon className={`w-8 h-8 text-${step.color}`} />
+                    </div>
                   </div>
-                  {index < steps.length - 1 && (
-                    <div className="w-0.5 h-full bg-gradient-to-b from-primary to-secondary mt-4" />
-                  )}
-                </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="font-[var(--font-heading)] font-semibold text-lg mb-2 text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">{step.description}</p>
-                </div>
-              </div>
+                </motion.div>
+                <h3 className="font-heading font-bold text-xl mb-2 text-foreground">
+                  {step.title}
+                </h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">{step.description}</p>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
