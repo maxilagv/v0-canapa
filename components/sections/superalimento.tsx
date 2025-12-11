@@ -57,7 +57,7 @@ export function Superalimento() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="bg-card p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50 text-center"
+              className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50 text-center"
             >
               <div className="flex justify-center mb-4">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">

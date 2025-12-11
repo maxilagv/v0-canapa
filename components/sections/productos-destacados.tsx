@@ -9,18 +9,21 @@ const products = [
     image: "https://i.postimg.cc/7hqZ7sv7/Gemini-Generated-Image-7lrw4l7lrw4l7lrw.png",
     description: "Nuestra pasta artesanal, una fusión perfecta de sémola de trigo y harina de cáñamo.",
     bgColor: "bg-primary/10",
+    alt: "Plato con pasta de cáñamo artesanal y hojas de cáñamo",
   },
   {
     name: "Aceite de Cáñamo",
     image: "https://i.postimg.cc/Vv7mtzBj/Gemini-Generated-Image-t2kchtt2kchtt2kc.png",
     description: "Aceite de semilla de cáñamo prensado en frío, rico en Omega 3 y 6.",
     bgColor: "bg-secondary/10",
+    alt: "Botella de aceite de semilla de cáñamo prensado en frío",
   },
   {
     name: "Harina de Cáñamo",
     image: "https://i.postimg.cc/6QswnjnT/Gemini-Generated-Image-tn3doztn3doztn3d-(1).png",
     description: "Harina de alto valor proteico para enriquecer tus recetas diarias.",
     bgColor: "bg-accent/10",
+    alt: "Tazón con harina de cáñamo y semillas de cáñamo",
   },
 ]
 
@@ -58,7 +61,7 @@ export function ProductosDestacados() {
               <div className="relative h-72 overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={product.alt}
                   layout="fill"
                   objectFit="cover"
                   className="transition-transform duration-500 group-hover:scale-110"

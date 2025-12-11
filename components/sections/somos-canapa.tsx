@@ -50,7 +50,7 @@ export function SomosCanapa() {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            Más que una marca, somos un movimiento hacia una alimentación consciente y sostenible.
+            Nuestro propósito es divulgar el uso de esta superplanta y su superalimento.
           </p>
         </motion.div>
 
@@ -63,7 +63,7 @@ export function SomosCanapa() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="bg-card p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50"
+                className="bg-gradient-to-br from-green-100 to-green-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50"
               >
                 <div className={`w-14 h-14 rounded-xl bg-${value.color}/10 flex items-center justify-center mb-5`}>
                   <value.icon className={`w-7 h-7 text-${value.color}`} />
@@ -81,10 +81,10 @@ export function SomosCanapa() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7 }}
-          className="bg-card/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg border border-border/50 max-w-4xl mx-auto text-center"
+          className="bg-gradient-to-br from-green-100 to-green-50/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg border border-border/50 max-w-4xl mx-auto text-center"
         >
           <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-            Fuimos el <strong className="text-primary">primer restaurante en Argentina</strong> en incorporar harina de cáñamo en nuestra carta, comenzando con pizzas y fideos. Nuestra misión es llevar sus beneficios a más personas y <strong className="text-primary">fomentar una industria local y sustentable</strong>.
+            Somos los <strong className="text-primary">primeros en realizar alimentos con cáñamo</strong> en Argentina. Fuimos pioneros con nuestro restaurante, donde incorporamos la harina de cáñamo en fideos. Nuestra misión es llevar sus beneficios a más personas y <strong className="text-primary">fomentar una industria local y sustentable</strong>.
           </p>
         </motion.div>
       </div>

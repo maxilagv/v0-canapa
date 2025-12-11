@@ -17,7 +17,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <Distribuidores />
       <ProductosDestacados />
       <QueEsCanamo />
       <Superalimento />
@@ -27,6 +26,7 @@ export default function Home() {
       <FAQ />
       <Contacto />
       <LeyFinanciamiento />
+      <Distribuidores />
       <Footer />
     </main>
   )

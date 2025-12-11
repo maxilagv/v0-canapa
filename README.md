@@ -7,7 +7,7 @@
 
 ## Sobre Canapa
 
-**Canapa** es el primer emprendimiento en Argentina en elaborar alimentos con harina de cáñamo. Ofrecemos pizzas y pastas enriquecidas con cáñamo y chía: nutrición real en platos de siempre.
+**Canapa** es el primer emprendimiento en Argentina en elaborar alimentos con harina de cáñamo. Ofrecemos alimentos enriquecidos con cáñamo: nutrición real en platos de siempre.
 
 ### Marco Legal
 

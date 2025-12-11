@@ -20,12 +20,12 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Canapa - Primeros en harina de cáñamo en Argentina",
   description:
-    "Pizzas y pastas enriquecidas con cáñamo y chía. Nutrición real en tus platos de siempre. El primer restaurante argentino en incorporar harina de cáñamo a su carta.",
+    "Alimentos enriquecidos con cáñamo. Nutrición real en tus platos de siempre. Los primeros en elaborar alimentos con harina de cáñamo en Argentina.",
   generator: "v0.app",
-  keywords: ["cáñamo", "chía", "superalimento", "pasta", "pizza", "nutrición", "Argentina", "hemp"],
+  keywords: ["cáñamo", "superalimento", "pasta", "alimentos", "nutrición", "Argentina", "hemp"],
   openGraph: {
     title: "Canapa - Primeros en harina de cáñamo en Argentina",
-    description: "Pizzas y pastas enriquecidas con cáñamo y chía. Nutrición real en tus platos de siempre.",
+    description: "Alimentos enriquecidos con cáñamo. Nutrición real en tus platos de siempre.",
     type: "website",
   },
 }

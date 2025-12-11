@@ -25,7 +25,7 @@ const steps = [
   {
     icon: ChefHat,
     title: "Elaboración Culinaria",
-    description: "Uso de la harina para crear pizzas y pastas deliciosas y funcionales.",
+    description: "Uso de la harina para crear alimentos deliciosos y funcionales.",
     color: "primary",
   },
 ]

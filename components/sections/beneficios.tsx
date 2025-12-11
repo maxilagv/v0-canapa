@@ -94,7 +94,7 @@ export function Beneficios() {
               key={index}
               variants={cardVariants}
               whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
-              className="bg-card p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50"
+              className="bg-gradient-to-br from-green-100 to-green-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-border/50"
             >
               <div className="flex items-center gap-4">
                 <div className={`w-14 h-14 rounded-xl bg-${benefit.color}/20 flex items-center justify-center flex-shrink-0`}>

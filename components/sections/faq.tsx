@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "¿Son aptos para celíacos?",
     answer:
-      "La harina de cáñamo es naturalmente libre de gluten. Sin embargo, nuestros productos como las pastas y pizzas se elaboran con sémola de trigo. Estamos desarrollando una línea de productos 100% sin TACC en el futuro.",
+      "La harina de cáñamo es naturalmente libre de gluten. Sin embargo, nuestros productos como las pastas y otros alimentos se elaboran con sémola de trigo. Estamos desarrollando una línea de productos 100% sin TACC en el futuro.",
   },
   {
     question: "¿Son solo para veganos o deportistas?",
@@ -57,7 +57,7 @@ export function FAQ() {
               >
                 <AccordionItem
                   value={`item-${index}`}
-                  className="bg-card border border-border/50 rounded-xl shadow-sm transition-shadow hover:shadow-md"
+                  className="bg-gradient-to-br from-green-100 to-green-50 border border-border/50 rounded-xl shadow-sm transition-shadow hover:shadow-md"
                 >
                   <AccordionTrigger className="font-heading font-semibold text-lg text-left text-foreground px-6 py-4 hover:no-underline">
                     {faq.question}

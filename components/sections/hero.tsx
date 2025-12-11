@@ -10,13 +10,13 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://i.postimg.cc/Mp5pYkDC/Gemini-Generated-Image-dxjd7bdxjd7bdxjd.png"
+          src="https://i.postimg.cc/brfCd4QK/Gemini-Generated-Image-m2pkztm2pkztm2pk.png"
           alt="Campo de cáñamo al atardecer"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/80 via-background/20 to-secondary/80 animated-gradient" />
       </div>
 
       {/* Content */}
@@ -26,7 +26,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto text-pretty drop-shadow-sm">
-          Pizzas y pastas enriquecidas con cáñamo y chía: nutrición real en tus platos de siempre.
+          Alimentos enriquecidos con cáñamo: nutrición real en tus platos de siempre.
         </p>
 
         <Button

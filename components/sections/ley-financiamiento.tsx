@@ -12,7 +12,7 @@ export function LeyFinanciamiento() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7 }}
-          className="max-w-4xl mx-auto bg-card p-8 md:p-12 rounded-2xl shadow-lg border border-border/50"
+          className="max-w-4xl mx-auto bg-gradient-to-br from-green-100 to-green-50 p-8 md:p-12 rounded-2xl shadow-lg border border-border/50"
         >
           <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-8">
             <div className="flex-shrink-0">

@@ -47,7 +47,7 @@ export function QueEsCanamo() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-16 p-8 bg-card border-2 border-accent/20 rounded-2xl shadow-lg"
+            className="mt-16 p-8 bg-gradient-to-br from-green-100 to-green-50 border-2 border-accent/20 rounded-2xl shadow-lg"
           >
             <div className="flex items-center gap-6">
               <div className="flex-shrink-0">

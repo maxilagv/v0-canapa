@@ -7,7 +7,7 @@
 :root {
   --background: #f8f9fa;
   --foreground: #212529;
-  --card: #ffffff;
+  --card: #d8e8d8;
   --card-foreground: #212529;
   --popover: #ffffff;
   --popover-foreground: #212529;
@@ -36,7 +36,7 @@
 .dark {
   --background: #0d1117;
   --foreground: #c9d1d9;
-  --card: #161b22;
+  --card: #233d23;
   --card-foreground: #c9d1d9;
   --popover: #161b22;
   --popover-foreground: #c9d1d9;
@@ -115,4 +115,21 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient-animation 15s ease infinite;
 }
