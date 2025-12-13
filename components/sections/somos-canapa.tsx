@@ -46,7 +46,7 @@ export function SomosCanapa() {
           className="text-center mb-16"
         >
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Somos Canapa
+            Canapa Alimentos
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">

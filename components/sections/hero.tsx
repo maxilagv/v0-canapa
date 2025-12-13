@@ -10,7 +10,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://i.postimg.cc/brfCd4QK/Gemini-Generated-Image-m2pkztm2pkztm2pk.png"
+          src="https://i.postimg.cc/bYgsbFJJ/Gemini-Generated-Image-eugfq6eugfq6eugf.png"
           alt="Campo de cáñamo al atardecer"
           fill
           className="object-cover"

@@ -72,17 +72,7 @@ export function Superalimento() {
           ))}
         </div>
 
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-16 text-center"
-        >
-          <p className="text-xl text-foreground/80 font-medium">
-            Nuestras pastas funcionan como un <strong className="text-primary">suplemento dietario natural</strong> en cada plato.
-          </p>
-        </motion.div>
+
       </div>
     </section>
   )

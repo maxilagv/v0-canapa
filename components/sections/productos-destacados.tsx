@@ -39,7 +39,7 @@ export function ProductosDestacados() {
           className="text-center mb-16"
         >
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Nuestros Productos Estrella
+            Pastas Secas
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
@@ -78,6 +78,29 @@ export function ProductosDestacados() {
             </motion.div>
           ))}
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mt-24 mb-16"
+        >
+          <Image
+            src="https://i.postimg.cc/Wb2FDcwz/Gemini-Generated-Image-y2dz8ay2dz8ay2dz.png"
+            alt="Sin TACC Logo"
+            width={120}
+            height={120}
+            className="mx-auto mb-4"
+          />
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Línea Sin TACC
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            Próximamente...
+          </p>
+        </motion.div>
       </div>
     </section>
   )
