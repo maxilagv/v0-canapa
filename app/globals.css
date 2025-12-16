@@ -3,62 +3,69 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* <CHANGE> Paleta de colores Canapa - tonos naturales verdes, marfil y miel */
+/* Colores Base Actualizados para mejor contraste */
 :root {
-  --background: #f8f9fa;
-  --foreground: #212529;
-  --card: #b8d8b8;
-  --card-foreground: #212529;
+  --green-dark: #047857;   /* Usar para textos importantes y títulos */
+  --green-main: #10b981;   /* El verde principal actual */
+  --green-light: #d4f4dd;  /* Backgrounds suaves */
+  --green-neon: #34d399;   /* Para acentos vibrantes, hovers y detalles de energía */
+  --cream: #fef3c7;        /* Color crema actual */
+
+  /* Mapeo de variables semánticas a la nueva paleta */
+  --background: var(--cream);
+  --foreground: var(--green-dark);
+  --card: var(--green-light);
+  --card-foreground: var(--green-dark);
   --popover: #ffffff;
-  --popover-foreground: #212529;
-  --primary: #28a745;
+  --popover-foreground: var(--green-dark);
+  --primary: var(--green-dark);
   --primary-foreground: #ffffff;
-  --secondary: #6c757d;
+  --secondary: var(--green-main);
   --secondary-foreground: #ffffff;
-  --muted: #f8f9fa;
-  --muted-foreground: #6c757d;
-  --accent: #17a2b8;
+  --muted: var(--green-light);
+  --muted-foreground: var(--green-dark);
+  --accent: var(--green-neon);
   --accent-foreground: #ffffff;
   --destructive: #dc3545;
   --destructive-foreground: #ffffff;
-  --border: #dee2e6;
-  --input: #ced4da;
-  --ring: #28a745;
-  --chart-1: #28a745;
-  --chart-2: #17a2b8;
-  --chart-3: #ffc107;
-  --chart-4: #dc3545;
-  --chart-5: #6c757d;
+  --border: var(--green-main);
+  --input: var(--green-light);
+  --ring: var(--green-neon);
+  --chart-1: var(--green-dark);
+  --chart-2: var(--green-main);
+  --chart-3: var(--green-light);
+  --chart-4: var(--green-neon);
+  --chart-5: var(--cream);
   --radius: 0.75rem;
-  --brand: #fd7e14;
+  --brand: var(--green-main);
 }
 
 .dark {
-  --background: #0d1117;
-  --foreground: #c9d1d9;
-  --card: #2a4d2a;
+  --background: #0d1117; /* Keep a very dark background */
+  --foreground: #c9d1d9; /* Keep light foreground for contrast */
+  --card: #2a4d2a; /* Slightly darker green for card in dark mode */
   --card-foreground: #c9d1d9;
   --popover: #161b22;
   --popover-foreground: #c9d1d9;
-  --primary: #28a745;
+  --primary: var(--green-neon); /* Use neon green for primary in dark mode */
   --primary-foreground: #ffffff;
-  --secondary: #8b949e;
+  --secondary: var(--green-main);
   --secondary-foreground: #ffffff;
   --muted: #161b22;
   --muted-foreground: #8b949e;
-  --accent: #17a2b8;
+  --accent: var(--green-neon);
   --accent-foreground: #ffffff;
   --destructive: #dc3545;
   --destructive-foreground: #ffffff;
   --border: #30363d;
   --input: #0d1117;
-  --ring: #28a745;
-  --chart-1: #28a745;
-  --chart-2: #17a2b8;
-  --chart-3: #ffc107;
-  --chart-4: #dc3545;
+  --ring: var(--green-neon);
+  --chart-1: var(--green-neon);
+  --chart-2: var(--green-main);
+  --chart-3: var(--green-dark);
+  --chart-4: var(--green-light);
   --chart-5: #8b949e;
-  --brand: #fd7e14;
+  --brand: var(--green-neon);
 }
 
 @theme inline {

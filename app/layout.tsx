@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat, Open_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { CustomCursor } from "@/components/custom-cursor"
 
 // <CHANGE> Tipografías Canapa: Montserrat para títulos, Open Sans para cuerpo
 const montserrat = Montserrat({
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${montserrat.variable} ${openSans.variable} font-sans antialiased`}>
+        <CustomCursor />
         {children}
         <Analytics />
       </body>

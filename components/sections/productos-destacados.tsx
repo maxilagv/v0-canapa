@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { ProductCard } from "../product-card"
 
 const products = [
   {
@@ -49,33 +50,7 @@ export function ProductosDestacados() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
-            <motion.div
-              key={product.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.1 * index }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className={`group rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-border/50 overflow-hidden ${product.bgColor}`}
-            >
-              <div className="relative h-72 overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold font-heading text-foreground mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-foreground/70">
-                  {product.description}
-                </p>
-              </div>
-            </motion.div>
+            <ProductCard key={product.name} product={product} index={index} />
           ))}
         </div>
         

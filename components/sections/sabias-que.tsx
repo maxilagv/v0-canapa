@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Lightbulb } from "lucide-react"
+import { SabiasQueCard } from "../sabias-que-card"
 
 const didYouKnowFacts = [
   {
@@ -48,34 +48,7 @@ export function SabiasQue() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {didYouKnowFacts.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-xl shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl overflow-hidden
-              ${
-                index % 4 === 0
-                  ? "bg-gradient-to-br from-green-100 to-emerald-100 border border-green-200"
-                  : index % 4 === 1
-                  ? "bg-gradient-to-br from-yellow-100 to-amber-100 border border-yellow-200"
-                  : index % 4 === 2
-                  ? "bg-gradient-to-br from-blue-100 to-cyan-100 border border-blue-200"
-                  : "bg-gradient-to-br from-purple-100 to-fuchsia-100 border border-purple-200"
-              }`}
-            >
-              <div className="p-6 h-full flex flex-col">
-                <div className="flex-shrink-0 mb-4">
-                  <Lightbulb className="h-8 w-8 text-primary" />
-                </div>
-                <div className="flex-grow">
-                  <p className="text-foreground/90 text-lg leading-relaxed">
-                    {item.fact}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+            <SabiasQueCard key={index} fact={item.fact} index={index} />
           ))}
         </div>
       </div>

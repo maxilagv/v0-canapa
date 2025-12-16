@@ -1,10 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu } from "lucide-react" // X is no longer needed here
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { DrawerMenu } from "@/components/drawer-menu" // Import the new DrawerMenu
+import { DrawerMenu } from "@/components/drawer-menu"
+import { motion } from "framer-motion"
+import { NavLink } from "./nav-link"
 
 const navLinks = [
   { href: "#que-es", label: "¿Qué es?" },
@@ -29,13 +31,19 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${ // z-index adjusted to be below drawer
-          isScrolled ? "bg-white/90 backdrop-blur-lg border-b" : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${
+          isScrolled ? "bg-background/80 backdrop-blur-xl" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <a href="#" className="flex items-center gap-3">
+            <motion.a 
+              href="#" 
+              className="flex items-center gap-3"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <Image
                 src="https://i.postimg.cc/Kj3bXwBH/Whats-App-Image-2025-11-27-at-14-24-51.jpg"
                 alt="Logo Canapa"
@@ -45,25 +53,22 @@ export function Navbar() {
               />
               <span
                 className={`font-heading font-bold text-2xl transition-colors ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-foreground" : "text-white"
                 }`}
               >
                 Canapa
               </span>
-            </a>
+            </motion.a>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-10">
               {navLinks.map((link) => (
-                <a
+                <NavLink 
                   key={link.href}
                   href={link.href}
-                  className={`text-base font-medium transition-colors hover:text-teal-500 ${
-                    isScrolled ? "text-gray-800" : "text-white"
-                  }`}
-                >
-                  {link.label}
-                </a>
+                  label={link.label}
+                  isScrolled={isScrolled}
+                />
               ))}
             </nav>
 
@@ -72,13 +77,19 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               className="md:hidden text-white"
-              onClick={() => setIsMenuOpen(true)} // Set to true to open drawer
+              onClick={() => setIsMenuOpen(true)}
               aria-label="Abrir menú"
             >
-              <Menu className={`transition-all ${isScrolled ? "text-gray-900" : "text-white"}`} />
+              <Menu className={`transition-all ${isScrolled ? "text-foreground" : "text-white"}`} />
             </Button>
           </div>
         </div>
+        <motion.div 
+          className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-green-neon to-transparent"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: isScrolled ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+        />
       </header>
 
       {/* Render the Off-Canvas Drawer Menu */}

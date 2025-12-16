@@ -2,6 +2,7 @@
 
 import { Dumbbell, Salad, Brain, Activity, Scale, Heart } from "lucide-react"
 import { motion } from "framer-motion"
+import { AnimatedCounter } from "../animated-counter"
 
 const benefits = [
   {
@@ -81,6 +82,27 @@ export function Beneficios() {
             El cáñamo es una fuente de nutrición que impulsa tu bienestar desde adentro hacia afuera.
           </p>
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-20 text-center">
+          <motion.div variants={cardVariants} className="p-6 bg-card rounded-xl">
+            <h3 className="text-5xl font-bold text-primary">
+              <AnimatedCounter from={0} to={9} />
+            </h3>
+            <p className="mt-2 text-lg font-semibold text-foreground">Aminoácidos Esenciales</p>
+          </motion.div>
+          <motion.div variants={cardVariants} className="p-6 bg-card rounded-xl">
+            <h3 className="text-5xl font-bold text-primary">
+              <AnimatedCounter from={0} to={100} suffix="%" />
+            </h3>
+            <p className="mt-2 text-lg font-semibold text-foreground">Proteínas Completas</p>
+          </motion.div>
+          <motion.div variants={cardVariants} className="p-6 bg-card rounded-xl">
+            <h3 className="text-5xl font-bold text-primary">
+                1:3
+            </h3>
+            <p className="mt-2 text-lg font-semibold text-foreground">Ratio Omega 3:6</p>
+          </motion.div>
+        </div>
 
         <motion.div
           variants={containerVariants}
